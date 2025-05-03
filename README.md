@@ -21,28 +21,11 @@ Key contributions:
 
 ## Algorithms Implemented
 
-1. **Algorithm 1**: Unified framework for constructing accurate coresets via Kernelization.
-2. **Algorithm 2**: Accurate coreset construction for Ridge Regression.
-3. **Algorithm 3**: Extension to ℓ<sub>p</sub>-Regularized ℓ<sub>p</sub>-Regression for even-valued p.
-4. **Algorithm 4**: Accurate coreset construction for Latent Variable Models.
-
-## Repository Structure
-
-```
-├── data/
-│   └── [Datasets used for experiments]
-├── src/
-│   ├── kernelization.py
-│   ├── ridge_regression.py
-│   ├── lp_regression.py
-│   └── latent_variable_models.py
-├── experiments/
-│   └── [Scripts to reproduce experiments]
-├── results/
-│   └── [Generated results and plots]
-├── requirements.txt
-└── README.md
-```
+1. **Accurate Coresets for LVMs**: Including Gaussian Mixture Models (GMMs) and Single Topic Modeling.
+2. **Linear Regression**: Implementation of coreset construction for regression problems.
+3. **Caratheodory's Algorithm**: Classical implementation for point selection.
+4. **Streaming Caratheodory's Algorithm**: Adaptation for streaming data scenarios.
+5. **Faster Caratheodory's Algorithm**: Optimized version with improved performance.
 
 ## Installation
 
@@ -66,30 +49,7 @@ Key contributions:
    pip install -r requirements.txt
    ```
 
-## Usage
 
-### Ridge Regression
-To construct an accurate coreset for Ridge Regression:
-
-```bash
-python src/ridge_regression.py --input data/your_dataset.csv --lambda 0.1 --output results/ridge_coreset.csv
-```
-
-### ℓ<sub>p</sub>-Regularized ℓ<sub>p</sub>-Regression
-For even-valued p (e.g., p=4):
-
-```bash
-python src/lp_regression.py --input data/your_dataset.csv --p 4 --lambda 0.1 --output results/lp_coreset.csv
-```
-
-### Latent Variable Models
-For Gaussian Mixture Models:
-
-```bash
-python src/latent_variable_models.py --model gmm --input data/your_dataset.csv --components 5 --output results/gmm_coreset.csv
-```
-
-Replace `gmm` with `hmm` or `lda` for other models.
 
 ## Experimental Results
 
